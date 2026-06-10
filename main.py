@@ -5,7 +5,7 @@ def add_diagnosis(raw_diagnosis :str, current_list: list) -> list:
     # Cố gắng chuẩn hóa tên bệnh
     format_diagnoses = raw_diagnosis.strip().title()
     # Thêm chẩn đoán vào danh sách bệnh án
-    current_list.extend(list(format_diagnoses))
+    current_list.push(format_diagnoses)
     return current_list
 
 # Bác sĩ nhập thêm một chẩn đoán mới bị lỗi định dạng
